@@ -15,10 +15,8 @@ public class ObjectSpawner : MonoBehaviour
     private int chance;
     private bool run = false;
     public int Spawnchance;
-    public GameObject Canvas;
     public HighScore HighScore;
     [SerializeField] private float Increase;
-    [SerializeField] GameObject astroidParent;
     private void Start()
     {
         Spawnchance = PlayerPrefs.GetInt("SpawnChance", 90);
