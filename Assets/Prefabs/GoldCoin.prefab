@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 814791786227624542}
   - component: {fileID: 814791786227624543}
   - component: {fileID: 6492522416063191932}
-  - component: {fileID: 1240883525}
+  - component: {fileID: 1188026817}
   m_Layer: 6
   m_Name: GoldCoin
   m_TagString: Untagged
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de4eb1a67c37f34fbca2062f2ce0e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1240883525
+--- !u!114 &1188026817
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,8 +175,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 814791786227624541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3dfc3804930d18438a84c64b2537bae, type: 3}
+  m_Script: {fileID: 11500000, guid: ac4717bf11ee26543be3b7588d4cfe04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighScore: {fileID: 0}
-  Coinworth: 2

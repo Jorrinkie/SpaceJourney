@@ -90,6 +90,7 @@ public class ObjectSpawner : MonoBehaviour
         );
 
         GameObject newObject = Instantiate(objectPrefab, spawnPosition, Quaternion.identity);
+        newObject.transform.parent = transform;
     }
 
 }

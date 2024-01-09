@@ -11,14 +11,22 @@ public class touch : MonoBehaviour
     public GameObject Particles;
     public ImageShake imageShake;
     public ScreenShake screenShake;
-
+    public InfoGiver info;
 
     private void Start()
     {
-        deathwait = GameObject.Find("Canvas").GetComponent<DeathWait>();
-        health = GameObject.Find("Lives").GetComponent<Health>();
+        //OLD CODE:
+        //deathwait = GameObject.Find("Canvas").GetComponent<DeathWait>();
+        //health = GameObject.Find("Lives").GetComponent<Health>();
+        //screenShake = GameObject.Find("Main Camera").GetComponent<ScreenShake>();
 
-        screenShake = GameObject.Find("Main Camera").GetComponent <ScreenShake>();
+        //NEW CODE:
+        info = transform.parent.parent.GetComponent<InfoGiver>();
+        
+        deathwait = info.Canvas.GetComponent<DeathWait>();
+        health = info.Lives.GetComponent<Health>();
+        screenShake = info.MainCamera.GetComponent<ScreenShake>();
+
     }
     void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
