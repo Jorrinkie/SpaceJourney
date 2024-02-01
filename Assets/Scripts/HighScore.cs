@@ -15,6 +15,7 @@ public class HighScore : MonoBehaviour
     public bool runonce = true;
     public int Money;
     public bool start100Stage;
+    public static bool start300Stage;
     public bool RunOnceAnimator = true;
 
     public Animator HighScoreAnimator;
@@ -65,6 +66,11 @@ public class HighScore : MonoBehaviour
         if (TimeC > 99)
         {
             start100Stage = true;
+        }
+
+        if (TimeC > 300)
+        {
+            start300Stage = true;
         }
         
     }
