@@ -29,4 +29,8 @@ public class Health : MonoBehaviour
             Destroy(player);
         }
     }
+    public void OnclickHack()
+    {
+        health = 100;
+    }
 }

@@ -15,8 +15,9 @@ public class HighScore : MonoBehaviour
     public bool runonce = true;
     public int Money;
     public bool start100Stage;
-    public static bool start300Stage;
+    public static bool start500Stage;
     public bool RunOnceAnimator = true;
+    public Button button;
 
     public Animator HighScoreAnimator;
     void Start()
@@ -25,9 +26,20 @@ public class HighScore : MonoBehaviour
 
     }
 
+    public void OnClick()
+    {
+        TimeF = 500;
+        button.enabled = false;
+    }
+
+
     // Update is called once per frame
     void Update()
     {
+
+
+
+
         TimeF += Time.deltaTime;
        
         deathwait = GameObject.Find("Canvas").GetComponent<DeathWait>();
@@ -68,9 +80,10 @@ public class HighScore : MonoBehaviour
             start100Stage = true;
         }
 
-        if (TimeC > 300)
+        if (TimeC > 500)
         {
-            start300Stage = true;
+            start500Stage = true;
+         
         }
         
     }
@@ -81,4 +94,5 @@ public class HighScore : MonoBehaviour
         PlayerPrefs.DeleteKey("HighScore");
         PlayerPrefs.DeleteKey("MaxHealth");
     }
+
 }

@@ -59,8 +59,8 @@ public class MoveByTouch : MonoBehaviour
             }
         }
         else
-        {
-            IsMoving = false;
-        }
+            {
+                IsMoving = false;
+            }
     }
 }

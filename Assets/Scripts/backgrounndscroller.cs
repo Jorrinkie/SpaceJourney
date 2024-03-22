@@ -22,7 +22,7 @@ public class backgrounndscroller : MonoBehaviour
     {
         if (SpeedUp)
         {
-            Speed += 0.1f * Time.deltaTime;
+            Speed += 0.04f * Time.deltaTime;
         }
         offset += (Time.deltaTime * Speed) / 10;
         mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));

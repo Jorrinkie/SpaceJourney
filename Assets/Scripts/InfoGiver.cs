@@ -7,4 +7,6 @@ public class InfoGiver : MonoBehaviour
     public GameObject Canvas;
     public GameObject Lives;
     public GameObject MainCamera;
+    public GameObject Player;
+    public GameObject CircleSpawner;
 }

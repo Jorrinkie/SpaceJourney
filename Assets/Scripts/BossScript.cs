@@ -9,15 +9,19 @@ public class BossScript : MonoBehaviour
     public GameObject objectPrefab;
     public float spawnDistance = 100.0f;
     private int SpawnChance = 5;
-
+    private bool RunOnce = true;
     void Update()
     {
-        if (HighScore.start300Stage)
+        if (HighScore.start500Stage)
         {
             SpawnChance = Random.Range(1, 10);
             if (SpawnChance == 8)
             {
-                SpawnObject();
+                if (RunOnce)
+                {
+                    SpawnObject();
+                    RunOnce = false;
+                }
             }
         }
     }
